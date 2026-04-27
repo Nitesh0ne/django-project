@@ -1,15 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from firstapp.models import Empoyee
 
 
 # Create your views here.
 
 
 def index(request):
-    context = {
-        'f_name' : "Nitesh",
-        'l_name' : "Nepali"
-    }
+    emp_list = Employee.objects.all()
+
+    context = {'emp_list': emp_list}
+
+  
     
     return render(request, "firstapp/index.html",context=context)
 
