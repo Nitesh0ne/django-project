@@ -1,0 +1,18 @@
+# REQUEST FLOW IN DJANGO 
+
+BROWSER --> WEBSERVER --> urls.py --> views.py <--->  models.py 
+                                        |
+                                        |-------> Template
+
+
+1. Create djanog-project = django-admin startproject django-project
+2. Create django-app     = python3 manage.py startapp firstapp
+
+
+
+#Django Templates
+
+
+#static Files 
+
+
