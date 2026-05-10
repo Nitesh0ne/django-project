@@ -1,4 +1,4 @@
-#!/home/nitesh/Desktop/nitesh/django-project/.venv/bin/python3
+#!/home/niteshn/Desktop/programming/django-project/.venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -15,15 +15,19 @@ Including another URLconf
 """
 
 
-
-
 from django import views
 from django.contrib import admin
 from django.urls import path
-import firstapp.views
+from . import views
 
 urlpatterns = [
-    path('index/', firstapp.views.index, name='index'),
-
+    path('',views.index, name='index'),
+    path('network/',views.network, name='network'),
+    path('system/',views.system, name='system'),
+    path('cloud/',views.cloud, name='cloud'),
+    path('devops/',views.devops, name='devops'),
+    path('cybersecurity/',views.cybersecurity, name='cybersecurity'),
+      
 ]
+
 
