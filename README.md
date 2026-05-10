@@ -1,2 +1,0 @@
-# django-learning
-django-learning
