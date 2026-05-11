@@ -16,3 +16,33 @@ BROWSER --> WEBSERVER --> urls.py --> views.py <--->  models.py
 #static Files 
 
 
+
+
+# Session 3 
+Working with models and databasese
+models = databasese
+username =
+password = 
+host = 
+port = 
+*********** Check the Databse connection from django **********************************
+(.venv) nitesh@midas-Inspiron-3501:~/Desktop/nitesh/django-project$ python manage.py shell
+12 objects imported automatically (use -v 2 for details).
+
+Python 3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> 
+>>> 
+>>> from django.db import connection
+>>> c=connection.cursor()
+>>> c
+<django.db.backends.utils.CursorDebugWrapper object at 0x72af2374ac00>
+>>> 
+*****************************************************************************************
+
+ 
+python manage.py makemigrations 
+
+python manage.py sqlmigrate firstapp 0001
+

@@ -13,15 +13,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 TEMP_DIR = BASE_DIR/'templates'
 STATIC_DIR = BASE_DIR/'static'
 
-
-
-
-
-
-
-
-
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
@@ -31,8 +22,7 @@ SECRET_KEY = 'django-insecure-3+^!(92bs9w4s2xrk#kmvda7u)4^pft$9o)+tfs0(z8m50pwv-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 INSTALLED_APPS = [
@@ -43,6 +33,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'firstapp',
+    'secondapp',
 ]
 
 MIDDLEWARE = [
@@ -78,6 +69,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        # 'USER': 'root',
+        # 'PASSWORD': 'root',
     }
 }
 
@@ -114,3 +107,5 @@ STATICFILES_DIRS = [
     STATIC_DIR
    
 ]
+
+

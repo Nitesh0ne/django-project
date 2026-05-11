@@ -1,54 +1,15 @@
-<!-- {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First App</title>
-    <link rel="stylesheet" href="{% static 'firstapp/css/index.css' %}">
-</head>
-<body>
-    <h1> This is wish app. I will wish you according to  your computer time. </h1>
-    <h2> Current date: {{ insert_date }} </h2>
-    <h2> Message:    {{ insert_msg }} </h2>
-
-</body>
-
-</html> -->
-
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First App Web page</title>
+    <title>Index web page</title>
     <link rel="stylesheet" href="{% static 'firstapp/css/index.css' %}">
-  
 </head>
 <body>
-    <h1>This is the home page of  First Web  page </h1>
-    <h3>Name          : {{ name }}</h3>
-    <h3>Profession is : {{ Profession }}</h3>
-  
-
-<!-- 
-    <div class="container">
-         <img src="{% static 'firstapp/images/wallpaper.jpg' %}" alt=" hacker Image"  class="fit-image">
-    </div> -->
-
-<ul>
-
-  <li><a href="{% url 'network' %}">Network</a></li>
-  <li><a href="{% url 'system'  %}">System</a></li>
-  <li><a href="{% url 'cloud'   %}">Cloud</a></li>
-  <li><a href="{% url 'devops'  %}">DevOps</a></li>
-  <li><a href="{% url 'cybersecurity' %}">Cybersecurity</a></li>
-</ul>
-
-   
-
-
-    
+    <h1>This is the index page</h1>
+    <h2>Name: {{ name }}</h2>
+    <h2>Age: {{ age }}</h2>
 </body>
 </html>
