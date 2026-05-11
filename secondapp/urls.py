@@ -6,10 +6,6 @@ from django.urls import path
 import secondapp.views
 
 urlpatterns = [
-    path('home/', secondapp.views.home, name='home'),
-    path('about/', secondapp.views.about, name='about'),
-    # path('home/', secondapp.views.home, name='home'),
-    # path('about/', secondapp.views.about, name='about'),
-    
+    path('', secondapp.views.home, name='home'),
 ]
 

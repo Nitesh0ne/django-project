@@ -46,3 +46,14 @@ python manage.py makemigrations
 
 python manage.py sqlmigrate firstapp 0001
 
+
+python manage.oy createsuperuser ==> create superuser
+
+= Register models in admin.my
+
+convert object into string
+
+ 
+
+
+

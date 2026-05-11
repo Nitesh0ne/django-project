@@ -1,12 +1,5 @@
-# from django.shortcuts import render
-
-from django.http import HttpResponse
-
-
+from django.shortcuts import render
 
 def home(request):
-    return HttpResponse("This is home page of second app")
-
-
-def about(request):
-    return HttpResponse("This is about page of second app")
+    res='secondapp/home.html'
+    return render(request, res)

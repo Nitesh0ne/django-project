@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from firstapp.models import Employee
 
 # import datetime
 # def home(request):
@@ -29,10 +30,13 @@ def home(request):
 #     return HttpResponse(res)
 
 def index(request):
-    context = {
-        'name': "Nitesh",
-        'age': 20
-    }
+    # context = {
+    #     'name': "Nitesh",
+    #     'age': 20
+    # }
+    emp_list = Employee.objects.all()
+    context = {'emp_list':emp_list}
+
     return render(request, 'firstapp/index.html', context=context)
 
 def network(request):
