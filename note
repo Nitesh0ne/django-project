@@ -51,6 +51,49 @@ python manage.oy createsuperuser ==> create superuser
 = Register models in admin.my
 convert object into string
 
+
+*************************************************************************************
+Sessionn 4:
+1. Make  a virtual Environment in python : python -m venv .venv 
+2. Actiate Virtual Environment
+3. Go to the root folder and install django : pip install django 
+4. Create a django project : django-admin startproject  my-django-project
+5. Go to the project root Folder 
+6. and make app inside the project root folder: python manage.py startapp firstapp
+7. import your  project directory into the vscode
+8. Register your app in settings.py 
+9. Make a template folder inside the project  directory . 
+10. make the temp dir : TEMP_DIR = BASE_DIR/'templates'
+11. Insert TEMP_DIR in  your templates_list
+12. Make new folder inside the templates folder named your app name (e.g firstapp) and create the index.html file 
+13. make the static folder inside the project  directory.
+14. configure  static in settings.py 
+    STATIC_DIR = BASE_DIR/'static'
+    STATICFILES_DIRS = [STATIC_DIR,]
+15. Write you first views inside the views.py in firstapp 
+16. configure app  level urls
+17. congiure project based urls
+18. Run your server : python manage.py runserver
+19. check your html is working or not by taking boiler plate int templates/firstapp/index.html file
+20. make 3 folder css,img and js inside static folder
+21. make sample css code file in templates/css/css_file
+22. Link css file in html file: <link rel="stylesheet" href="{% static 'css/index.css'%}">
+23. Load static Files : {% load static %} jst  below the <!DOCTYPE html>
+24. Create your first model inheriting models.Model in your Model Class.
+25. Create  python code into SQL code: python manage.py makemigrations
+26. Convert SQL code into Databse table : python manage.py migrate.
+27. Create superuser : python manage.py createsuperuser
+28. Check django superadmin dashboard.: http://127.0.0.1:8000/admin/
+29. Register your model in admin.py: admin.site.register(Model_name) ==> Don't forget to import your model.
+30. Convert object into string by def__str__(self)
+31. Import db object in  your views.py my_obj = Employee.objects.all(), context = {"my_obj":my_obj}
+32. Capture your object from html file using {{key}}
+33. Create forms.py in application folder
+===========================================================================
+
+faker module in python 
+
+cleaned_data 
  
 
 

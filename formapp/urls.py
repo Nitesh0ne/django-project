@@ -16,12 +16,12 @@ Including another URLconf
 
 from django import views
 from django.contrib import admin
-from django.urls import path,include
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('', include('firstapp.urls')),
-    path('secondapp/', include('secondapp.urls')),
-    path('formapp/', include('formapp.urls')),
-    path('admin/', admin.site.urls),
+     
+     path('',views.form_index, name='form_index'),
 ]
+
 
