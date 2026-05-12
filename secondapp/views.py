@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .models import Student
 
-def home(request):
-    res='secondapp/home.html'
-    return render(request, res)
+                               
+def student_list(request):
+    students = Student.objects.all()
+    return render(request, 'students.html', {'students': students})

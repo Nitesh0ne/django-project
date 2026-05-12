@@ -25,6 +25,7 @@ username =
 password = 
 host = 
 port = 
+
 *********** Check the Databse connection from django **********************************
 (.venv) nitesh@midas-Inspiron-3501:~/Desktop/nitesh/django-project$ python manage.py shell
 12 objects imported automatically (use -v 2 for details).
@@ -46,11 +47,8 @@ python manage.py makemigrations
 
 python manage.py sqlmigrate firstapp 0001
 
-
 python manage.oy createsuperuser ==> create superuser
-
 = Register models in admin.my
-
 convert object into string
 
  
