@@ -4,6 +4,7 @@ import django
 django.setup() # to setup the django environment
 from faker import *
 from random import * 
+
 from firstapp.models import Employee
 
 faker = Faker("ne_NP") #  object created of the class Faker

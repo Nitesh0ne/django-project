@@ -20,8 +20,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-     
-     path('',views.form_index, name='form_index'),
+     path('',views.employee_view, name='form_index'),
 ]
 
 

@@ -1,23 +1,18 @@
 from django.shortcuts import render
 from .forms import EmployeeForm
 
+
 # Create your views here.
+def employee_view(request):
 
-def form_index(request):
-    form = EmployeeForm()
-    context = {'form': form}
+   form = EmployeeForm()
 
-    return render(request, 'formapp/employeerecord.html.html', context=context)
+   # if request.method == "POST":
+   #    form = EmployeeForm(request.POST)
+   #    if form.is_valid():
+   #       print("Name: ", form.cleaned_data["ename"])
+   #       # Employee.objects.create(ename=form.cleaned_data)
 
-
-
-def employee_input(request):
-    if request.method == 'POST':
-        form = EmployeeForm(request.POST)
-        if form.is_valid():
-            form.save()
-            return render(request, 'formapp/success.html')
-    else:
-        form = EmployeeForm()
-    context = {'form': form}
-    return render(request, 'formapp/employeerecord.html', context=context)
+   context = {"form":form}
+   # form.EmployeeForm()
+   return render(request, "formapp/employeerecord.html",context=context)

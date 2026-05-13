@@ -97,4 +97,10 @@ cleaned_data
  
 
 
+ django forms;
+    forms : to enter the user input 
+
+
+Flow : form.py --> views.py ------(using context)-----> template
+
 
