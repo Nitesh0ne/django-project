@@ -1,21 +1,12 @@
 from django.db import models
 
-class Student(models.Model):
-    std_roll_no = models.IntegerField()
-    std_fname = models.CharField(max_length=30)
-    std_lname = models.CharField(max_length=30)
-    std_class = models.IntegerField()
+class Employee(models.Model):
+    first_name    = models.CharField(max_length=200)
+    last_name     = models.CharField(max_length=200)
+    email         = models.EmailField(unique=True)
+    phone_number  = models.CharField(max_length=15,blank=True,null=True)
+    hire_date     = models.DateField()
+    job_title     = models.CharField(max_length=50)
+    is_active     = models.BooleanField(default=True)
 
-    # REQUIRED fields (safe because new DB)
-    std_section = models.CharField(max_length=30, default="A")
-
-    # OPTIONAL fields
-    std_dob = models.DateField(null=True, blank=True)
-    std_email = models.EmailField(null=True, blank=True)
-    std_phone_no = models.CharField(max_length=15, null=True, blank=True)
-
-    # SAFE DEFAULT
-    std_address = models.TextField(default="Unknown")
-
-    def __str__(self):
-        return f"{self.std_fname} {self.std_lname}"
+ 

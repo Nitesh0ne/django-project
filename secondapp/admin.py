@@ -1,8 +1,17 @@
 from django.contrib import admin
-from secondapp.models import Student
-
-# Register your models here.
+from .models import Employee
 
 
-admin.site.register(Student)
+# Register your models here.    
+
+@admin.register(Employee)
+class EmployeeAdmin(admin.ModelAdmin):
+    list_display = ('first_name', 'last_name')
+    list_per_page =1
+
+
+# admin.site.register(Employee)
+
+
+
 

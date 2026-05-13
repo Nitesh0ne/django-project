@@ -5,6 +5,6 @@ import secondapp.views
 
 urlpatterns = [
     # path('', secondapp.views.home, name='home'),
-    path('students/', secondapp.views.student_list, name='student_list'),
+    path('', secondapp.views.home, name='home'),
 ]
 
