@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form App</title>
+</head>
+<body>
+    <h1>This is Form page</h1>
+    <div class="continaer">
+        <h1>Please Enter the Employee Record</h1>
+        <form method="post">
+            {{ form.as_p}}
+            <input type="submit" class="btn btn-primary" value="submit">
+
+
+            {% csrf_token %}
+        </form>
+
+    </div>
+
+  
+</body>
+</html>
