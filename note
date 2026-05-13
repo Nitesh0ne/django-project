@@ -104,3 +104,18 @@ cleaned_data
 Flow : form.py --> views.py ------(using context)-----> template
 
 
+**************************************************************************************************
+session 5: 
+
+Forms validation
+
+ 
+ Form validation is cand  be done two ways :
+ 1. Explicitly by programmer by using clean method
+ 2. By using django inbuilt validation
+
+syntax:
+clean_fieldname(self)
+
+
+django  have given a core validation
