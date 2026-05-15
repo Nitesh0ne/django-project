@@ -8,5 +8,20 @@ class EmployeeForm(forms.ModelForm):
         model = Employee
         fields = "__all__"
 
+        
+class NameForm(forms.Form):
+    name= forms.CharField()
+
+    
+
+class AgeForm(forms.Form):
+    age=forms.IntegerField()
 
 
+
+class Salaryorms.Form):
+    age=forms.IntegerField()
+
+
+class AgeForm(forms.Form):
+    age=forms.IntegerField()
