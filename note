@@ -134,3 +134,20 @@ Advance template:
 
 Template Inheritance
 Template  tags
+
+*****************************************************
+
+Session handling in  python 
+
+1. cookies
+2. Django Session Framework (session Api)
+3. Hidden Form Fields (not recommended)
+4. URL rewriting (not recommended)
+
+
+# Session Management with cookies
+
+cookies 
+
+
+
