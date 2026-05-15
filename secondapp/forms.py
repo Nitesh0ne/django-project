@@ -12,16 +12,15 @@ class EmployeeForm(forms.ModelForm):
 class NameForm(forms.Form):
     name= forms.CharField()
 
-    
-
 class AgeForm(forms.Form):
     age=forms.IntegerField()
 
 
+class SalaryForm(forms.Form):
+    salary=forms.FloatField()
 
-class Salaryorms.Form):
-    age=forms.IntegerField()
+class ResultForm(forms.Form):
+    result=forms.IntegerField()
 
 
-class AgeForm(forms.Form):
-    age=forms.IntegerField()
+

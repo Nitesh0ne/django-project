@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    {% if request.session %}
+    <h2> Thanks for providing your info please verify it </h2>
+    <ul>
+    {% for key,value in request.session.items %}
+    <li><h3>{{key}}:{{value}}</h3></li>
+    {% endfor %}
+    </ul>
+    {%else%}
+    <p>No Information found.</p>
+    {%endif%}
+
+</body>
+</html>

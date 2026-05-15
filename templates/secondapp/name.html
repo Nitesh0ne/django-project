@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name</title>
+</head>
+<body>
+    <form action="{% url 'age' %}">
+        <h1>Enter  your Name here</h1>
+        {%csrf_token%}
+        {{form.as_p}}
+        <input type="submit" name = " " vaule="Submit Name">
+
+    </form>
+
+    
+    
+</body>
+</html>

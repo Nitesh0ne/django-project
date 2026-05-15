@@ -1,6 +1,6 @@
 from django.shortcuts import render,redirect
 from .models import Employee
-from .forms import EmployeeForm
+from .forms import *
 
 
 
@@ -42,20 +42,39 @@ def portfolio(request):
 
 
 def name_view(request):
-    context = {}
+    form = NameForm()
+   
+    context = {
+        'form': form
+    }
     return render (request, 'secondapp/name.html', context=context)
 
 def age_view(request):
-    context = {}
+    name = request.GET['name']
+    request.session['name']=name
+    form = AgeForm()
+    context = {
+        'form': form
+    }
     return render (request, 'secondapp/age.html', context=context)
 
 def salary_view(request):
-    context = {}
+    age = request.GET['age']
+    request.session['age']=age
+    form = SalaryForm()
+    context = {
+        'form': form
+    }
     return render (request, 'secondapp/salary.html', context=context)
 
 
 def result_view(request):
-    context = {}
+    salary = request.GET['salary']
+    request.session['salary']=salary
+    form = ResultForm()
+    context = {
+        
+    }
     return render (request, 'secondapp/result.html', context=context)
 
 
